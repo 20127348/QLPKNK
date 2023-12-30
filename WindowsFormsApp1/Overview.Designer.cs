@@ -60,6 +60,7 @@
             this.Controls.Add(this.label2);
             this.Name = "Overview";
             this.Size = new System.Drawing.Size(970, 550);
+            this.Load += new System.EventHandler(this.Overview_Load);
             this.ResumeLayout(false);
 
         }

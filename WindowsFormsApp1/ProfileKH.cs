@@ -28,6 +28,13 @@ namespace WindowsFormsApp1
             textBox2.Text = Save.dob;
             textBox3.Text = Save.phonenum;
             textBox4.Text = Save.email;
+            textBox5.Text = Save.id_hs;
+            textBox6.Text = Save.mk;
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

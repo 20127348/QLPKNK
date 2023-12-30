@@ -36,5 +36,10 @@ namespace WindowsFormsApp1
         {
             account1.BringToFront();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            medicineAD1.BringToFront();
+        }
     }
 }

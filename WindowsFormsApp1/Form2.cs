@@ -36,5 +36,10 @@ namespace WindowsFormsApp1
         {
             profileNS1.BringToFront();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            patientList1.BringToFront();
+        }
     }
 }

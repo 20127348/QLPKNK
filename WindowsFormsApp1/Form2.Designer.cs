@@ -36,9 +36,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.profileNS1 = new WindowsFormsApp1.ProfileNS();
             this.calendar1 = new WindowsFormsApp1.Calendar();
             this.treatment1 = new WindowsFormsApp1.Treatment();
-            this.profileNS1 = new WindowsFormsApp1.ProfileNS();
+            this.patientList1 = new WindowsFormsApp1.PatientList();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -120,6 +121,7 @@
             this.button3.Text = "Patient List";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -162,6 +164,13 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // profileNS1
+            // 
+            this.profileNS1.Location = new System.Drawing.Point(206, 3);
+            this.profileNS1.Name = "profileNS1";
+            this.profileNS1.Size = new System.Drawing.Size(970, 550);
+            this.profileNS1.TabIndex = 3;
+            // 
             // calendar1
             // 
             this.calendar1.Location = new System.Drawing.Point(206, 3);
@@ -176,18 +185,19 @@
             this.treatment1.Size = new System.Drawing.Size(970, 550);
             this.treatment1.TabIndex = 1;
             // 
-            // profileNS1
+            // patientList1
             // 
-            this.profileNS1.Location = new System.Drawing.Point(206, 3);
-            this.profileNS1.Name = "profileNS1";
-            this.profileNS1.Size = new System.Drawing.Size(970, 550);
-            this.profileNS1.TabIndex = 3;
+            this.patientList1.Location = new System.Drawing.Point(206, 3);
+            this.patientList1.Name = "patientList1";
+            this.patientList1.Size = new System.Drawing.Size(970, 550);
+            this.patientList1.TabIndex = 4;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.patientList1);
             this.Controls.Add(this.profileNS1);
             this.Controls.Add(this.calendar1);
             this.Controls.Add(this.treatment1);
@@ -215,5 +225,6 @@
         private Treatment treatment1;
         private Calendar calendar1;
         private ProfileNS profileNS1;
+        private PatientList patientList1;
     }
 }

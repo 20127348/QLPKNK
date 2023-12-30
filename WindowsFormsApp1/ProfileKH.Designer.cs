@@ -38,6 +38,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label2
@@ -57,7 +61,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 41);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Customer";
+            this.label1.Text = "Patient";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lb1
@@ -136,11 +140,55 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(294, 27);
             this.textBox4.TabIndex = 12;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // textBox5
+            // 
+            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(196, 387);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(294, 27);
+            this.textBox5.TabIndex = 14;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(56, 386);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(91, 28);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Mã hồ sơ";
+            // 
+            // textBox6
+            // 
+            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox6.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(196, 462);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(294, 27);
+            this.textBox6.TabIndex = 16;
+            this.textBox6.UseSystemPasswordChar = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(56, 461);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 28);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Mật khẩu";
             // 
             // ProfileKH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -171,5 +219,9 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label4;
     }
 }

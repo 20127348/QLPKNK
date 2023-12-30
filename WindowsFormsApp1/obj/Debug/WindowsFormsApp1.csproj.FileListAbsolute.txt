@@ -23,3 +23,9 @@ C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\Wi
 C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ProfileNS.resources
 C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ProfileNV.resources
 C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ProfileQTV.resources
+C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ScheduleKH.resources
+C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MedicineKH.resources
+C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.TreatmentKH.resources
+C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.BillKH.resources
+C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MedicineAD.resources
+C:\Users\Admin\OneDrive\Desktop\University\advance_db\Project\advanceDatabase\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.PatientList.resources

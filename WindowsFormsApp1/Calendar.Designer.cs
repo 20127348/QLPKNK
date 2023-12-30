@@ -28,9 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.label2.Location = new System.Drawing.Point(0, 60);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(970, 2);
+            this.label2.TabIndex = 5;
             // 
             // label1
             // 
@@ -43,14 +51,6 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Calendar";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label2
-            // 
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.label2.Location = new System.Drawing.Point(0, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(970, 2);
-            this.label2.TabIndex = 5;
             // 
             // Calendar
             // 

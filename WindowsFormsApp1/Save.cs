@@ -12,5 +12,8 @@ namespace WindowsFormsApp1
         public static string dob;
         public static string phonenum;
         public static string email;
+        public static string id;
+        public static string id_hs;
+        public static string mk;
     }
 }

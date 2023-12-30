@@ -29,13 +29,15 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.profileQTV1 = new WindowsFormsApp1.ProfileQTV();
             this.account1 = new WindowsFormsApp1.Account();
             this.overview1 = new WindowsFormsApp1.Overview();
-            this.profileQTV1 = new WindowsFormsApp1.ProfileQTV();
+            this.medicineAD1 = new WindowsFormsApp1.MedicineAD();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -52,6 +55,22 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 553);
             this.panel1.TabIndex = 0;
+            // 
+            // button4
+            // 
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Image = global::WindowsFormsApp1.Properties.Resources.drugs;
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(0, 202);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(200, 60);
+            this.button4.TabIndex = 6;
+            this.button4.Text = "   Medicine";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -111,6 +130,13 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // profileQTV1
+            // 
+            this.profileQTV1.Location = new System.Drawing.Point(206, 3);
+            this.profileQTV1.Name = "profileQTV1";
+            this.profileQTV1.Size = new System.Drawing.Size(970, 550);
+            this.profileQTV1.TabIndex = 3;
+            // 
             // account1
             // 
             this.account1.Location = new System.Drawing.Point(206, 3);
@@ -125,18 +151,19 @@
             this.overview1.Size = new System.Drawing.Size(970, 550);
             this.overview1.TabIndex = 1;
             // 
-            // profileQTV1
+            // medicineAD1
             // 
-            this.profileQTV1.Location = new System.Drawing.Point(206, 3);
-            this.profileQTV1.Name = "profileQTV1";
-            this.profileQTV1.Size = new System.Drawing.Size(970, 550);
-            this.profileQTV1.TabIndex = 3;
+            this.medicineAD1.Location = new System.Drawing.Point(206, 3);
+            this.medicineAD1.Name = "medicineAD1";
+            this.medicineAD1.Size = new System.Drawing.Size(970, 550);
+            this.medicineAD1.TabIndex = 4;
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.medicineAD1);
             this.Controls.Add(this.profileQTV1);
             this.Controls.Add(this.account1);
             this.Controls.Add(this.overview1);
@@ -161,5 +188,7 @@
         private Overview overview1;
         private Account account1;
         private ProfileQTV profileQTV1;
+        private System.Windows.Forms.Button button4;
+        private MedicineAD medicineAD1;
     }
 }

@@ -21,5 +21,35 @@ namespace WindowsFormsApp1
         {
             profileKH1.BringToFront();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            scheduleKH1.BringToFront();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            medicineKH1.BringToFront();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            profileKH1.BringToFront();
+        }
+
+        private void medicineKH1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            treatmentKH1.BringToFront();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            billKH1.BringToFront();
+        }
     }
 }

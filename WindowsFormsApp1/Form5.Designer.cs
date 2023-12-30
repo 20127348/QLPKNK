@@ -35,7 +35,11 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.medicineKH1 = new WindowsFormsApp1.MedicineKH();
+            this.scheduleKH1 = new WindowsFormsApp1.ScheduleKH();
             this.profileKH1 = new WindowsFormsApp1.ProfileKH();
+            this.treatmentKH1 = new WindowsFormsApp1.TreatmentKH();
+            this.billKH1 = new WindowsFormsApp1.BillKH();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,6 +73,7 @@
             this.button1.Text = "   Bill";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button6
             // 
@@ -84,6 +89,7 @@
             this.button6.Text = "   Medicine";
             this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -96,9 +102,10 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(200, 60);
             this.button5.TabIndex = 5;
-            this.button5.Text = "   Customer";
+            this.button5.Text = "   Patient";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -114,6 +121,7 @@
             this.button4.Text = "   Treatment";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button2
             // 
@@ -126,9 +134,10 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(200, 60);
             this.button2.TabIndex = 2;
-            this.button2.Text = "   Calendar";
+            this.button2.Text = "   Schedule";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -140,6 +149,21 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // medicineKH1
+            // 
+            this.medicineKH1.Location = new System.Drawing.Point(206, 3);
+            this.medicineKH1.Name = "medicineKH1";
+            this.medicineKH1.Size = new System.Drawing.Size(970, 550);
+            this.medicineKH1.TabIndex = 4;
+            this.medicineKH1.Load += new System.EventHandler(this.medicineKH1_Load);
+            // 
+            // scheduleKH1
+            // 
+            this.scheduleKH1.Location = new System.Drawing.Point(206, 3);
+            this.scheduleKH1.Name = "scheduleKH1";
+            this.scheduleKH1.Size = new System.Drawing.Size(970, 550);
+            this.scheduleKH1.TabIndex = 3;
+            // 
             // profileKH1
             // 
             this.profileKH1.Location = new System.Drawing.Point(206, 3);
@@ -147,11 +171,29 @@
             this.profileKH1.Size = new System.Drawing.Size(970, 550);
             this.profileKH1.TabIndex = 2;
             // 
+            // treatmentKH1
+            // 
+            this.treatmentKH1.Location = new System.Drawing.Point(206, 3);
+            this.treatmentKH1.Name = "treatmentKH1";
+            this.treatmentKH1.Size = new System.Drawing.Size(970, 550);
+            this.treatmentKH1.TabIndex = 5;
+            // 
+            // billKH1
+            // 
+            this.billKH1.Location = new System.Drawing.Point(206, 3);
+            this.billKH1.Name = "billKH1";
+            this.billKH1.Size = new System.Drawing.Size(970, 550);
+            this.billKH1.TabIndex = 6;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1182, 553);
+            this.Controls.Add(this.billKH1);
+            this.Controls.Add(this.treatmentKH1);
+            this.Controls.Add(this.medicineKH1);
+            this.Controls.Add(this.scheduleKH1);
             this.Controls.Add(this.profileKH1);
             this.Controls.Add(this.panel1);
             this.Name = "Form5";
@@ -174,5 +216,9 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
         private ProfileKH profileKH1;
+        private ScheduleKH scheduleKH1;
+        private MedicineKH medicineKH1;
+        private TreatmentKH treatmentKH1;
+        private BillKH billKH1;
     }
 }

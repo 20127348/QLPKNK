@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=.;Initial Catalog=QLPKNHAKHOA;Integrated Security=True");
+        SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-V4J1R76;Initial Catalog=QLPKNHAKHOATEST;Integrated Security=True");
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -34,13 +34,25 @@ namespace WindowsFormsApp1
                     DataTable dtable = new DataTable();
                     sda.Fill(dtable);
 
+
                     if (dtable.Rows.Count > 0)
                     {
                         Save.username = dtable.Rows[0]["HOTENBN"].ToString();
                         Save.dob = dtable.Rows[0]["NGAYSINHBN"].ToString();
                         Save.phonenum = dtable.Rows[0]["SDTBN"].ToString();
                         Save.email = dtable.Rows[0]["EMAIL"].ToString();
+                        Save.id = dtable.Rows[0]["ID_BN"].ToString();
+                        Save.mk = dtable.Rows[0]["MATKHAUBN"].ToString();
+
+                        
+                        string sql1 = "select ID_HOSOBN from HOSOBENHNHAN where ID_BN= " + Save.id + "";
+                        SqlDataAdapter sda1 = new SqlDataAdapter(sql1, conn);
+                        DataTable dtalbe1 = new DataTable();
+                        sda1.Fill(dtalbe1);
+                        Save.id_hs = dtalbe1.Rows[0]["ID_HOSOBN"].ToString();
                         this.Hide();
+                        
+
                         Form5 frm5 = new Form5();
                         frm5.ShowDialog();
                         frm5 = null;
@@ -118,40 +130,7 @@ namespace WindowsFormsApp1
             {
                 conn.Close();
             }
-            /*
-            if(username.Text == "ns")
-            {
-                this.Hide();
-                Form2 frm2 = new Form2();
-                frm2.ShowDialog();
-                frm2 = null;
-                this.Show();
-            }
-            else if (username.Text == "nv")
-            {
-                this.Hide();
-                Form3 frm3 = new Form3();
-                frm3.ShowDialog();
-                frm3 = null;
-                this.Show();
-            }
-            else if (username.Text == "ad")
-            {
-                this.Hide();
-                Form4 frm4 = new Form4();
-                frm4.ShowDialog();
-                frm4 = null;
-                this.Show();
-            }
-            else if (username.Text == "kh")
-            {
-                this.Hide();
-                Form5 frm5 = new Form5();
-                frm5.ShowDialog();
-                frm5 = null;
-                this.Show();
-            }
-            */
+            
             
         }
 
